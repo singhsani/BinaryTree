@@ -14,7 +14,7 @@ public class HightOfBinaryTree {
         System.out.println(hightOfBinaryTree(root));
     }
 
-    private static int hightOfBinaryTree(Node root) {
+    public static int hightOfBinaryTree(Node root) {
         if(root==null)
             return 0;
         return Math.max(hightOfBinaryTree(root.left),hightOfBinaryTree(root.right))+1;

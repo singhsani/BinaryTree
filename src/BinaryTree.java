@@ -13,7 +13,28 @@ public class BinaryTree {
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args){
       Node root=createTree();
-      printPreOrder(root);
+     // printPreOrder(root);
+
+        /**
+         * print data in level order
+         * O(n^2)
+         */
+//      HightOfBinaryTree h=new HightOfBinaryTree();
+//      for(int i=1;i<=h.hightOfBinaryTree(root);i++){
+//          LevelOrderTraversal.levelOrderTraversal(root,i);
+//      }
+        /**
+         * print data in level order using queue data structer
+         * O(n)
+         */
+//        LevelOrderUsingQueue UsingQueue=new LevelOrderUsingQueue();
+//        UsingQueue.levelOrderUsingQueue(root);
+//        LevelOrderPrintLineByLine lineByLine=new LevelOrderPrintLineByLine();
+//        lineByLine.printLevelLineByLine(root);
+//        PrintLeftView printLeftView=new PrintLeftView();
+//        printLeftView.printLeft(root);
+        PrintRightViewTree printRightViewTree=new PrintRightViewTree();
+        printRightViewTree.printRigthView(root);
     }
 
     private static void printPreOrder(Node root) {
